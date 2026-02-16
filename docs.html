@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Documentazione · Galleria Artiste</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg navbar-light custom-navbar border-bottom">
+      <div class="container-fluid px-4">
+        <a class="navbar-brand" href="index.html">Galleria Artiste</a>
+
+        <button class="navbar-toggler" type="button"
+          data-bs-toggle="collapse" data-bs-target="#navMain">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMain">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="collection.html">Collezione</a></li>
+            <li class="nav-item"><a class="nav-link active" href="docs.html">Documenti</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- CONTENUTO -->
+  <main class="container docs py-5">
+
+    <h1 class="mb-4">Web Project Plan</h1>
+
+    <div class="accordion" id="wppAccordion">
+
+    <!-- IDEA -->
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#idea">
+          Idea (Abstract)
+        </button>
+      </h2>
+      <div id="idea" class="accordion-collapse collapse show">
+        <div class="accordion-body">
+          <p>Il progetto nasce dalla volontà di creare una galleria digitale dedicata esclusivamente alle artiste donne, con l’obiettivo di offrire uno spazio di visibilità a figure storicamente marginalizzate nella narrazione tradizionale della storia dell’arte.<p>
+<p>La scelta di concentrarsi sulle artiste italiane attive tra il XVI e il XVIII secolo risponde a una duplice esigenza: da un lato valorizzare un patrimonio artistico spesso poco conosciuto, dall’altro sottolineare come il contesto culturale italiano sia ricco di presenze femminili di grande rilievo, nonostante la loro frequente esclusione dai canoni ufficiali.<p>
+<p>Il progetto intende quindi proporre una risorsa web accessibile e strutturata, che unisca contenuti culturali e strumenti digitali, permettendo l’esplorazione delle opere attraverso metadati, filtri e schede descrittive. La galleria si configura come uno spazio di consultazione, studio e divulgazione, pensato per restituire centralità alle artiste e favorire una lettura più inclusiva del patrimonio artistico.<p>
+        </div>
+      </div>
+    </div>
+
+    <!-- BRIEF -->
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#brief">
+          1. Brief (pianificazione)
+        </button>
+      </h2>
+      <div id="brief" class="accordion-collapse collapse">
+        <div class="accordion-body">
+       <h2>1.1 Finalità e obiettivi</h2>
+
+<p>La finalità principale del progetto è realizzare una galleria digitale dedicata alle artiste italiane attive tra il XVI e il XVIII secolo, con l’obiettivo di valorizzare il loro contributo storico-artistico e offrire uno spazio di consultazione strutturato e accessibile. Il progetto intende proporre una selezione coerente di opere rappresentative, organizzate attraverso un modello uniforme di metadati che permetta una navigazione intuitiva tramite filtri e ricerca. L’obiettivo non è solo espositivo, ma anche didattico e critico: favorire una riflessione sulla presenza femminile nella storia dell’arte e restituire visibilità a figure spesso marginalizzate nei canoni tradizionali.<p>
+
+<h2>1.2 Contenuti e ambito disciplinare</h2>
+
+<p>L’ambito disciplinare di riferimento è la storia dell’arte, con particolare attenzione alla pittura italiana tra Cinquecento e Settecento. Il contenuto principale della galleria consiste in immagini di opere pittoriche, accompagnate da schede descrittive e metadati strutturati (titolo, artista, data, tecnica, tema, luogo di conservazione, diritti). Le opere sono organizzate in un dataset in formato JSON, che consente una modellizzazione coerente dei dati e garantisce la possibilità di ampliamento futuro. Il progetto si configura quindi come una raccolta digitale di oggetti culturali strutturati secondo criteri omogenei.<p>
+
+<h2>1.3 Pubblico di riferimento</h2>
+
+<p>Il pubblico di riferimento è eterogeneo. In primo luogo, studenti di storia dell’arte e discipline umanistiche, docenti e ricercatori interessati al tema della rappresentazione femminile. In secondo luogo, utenti non specialisti, appassionati di arte e persone interessate alla storia delle donne. Il sito è pensato come una risorsa digitale accessibile sia in ambito accademico sia in ambito divulgativo, capace di coniugare rigore scientifico e chiarezza espositiva.<p>
+
+<h2>1.4 Modalità di comunicazione e accesso</h2>
+
+<p>Il principale mezzo comunicativo del progetto è l’immagine, accompagnata da testi sintetici ma informativi. La struttura del sito privilegia una comunicazione visiva chiara, un linguaggio accessibile e una navigazione facilitata tramite filtri e collegamenti interni. Dal punto di vista tecnico, la risorsa è progettata per essere multipiattaforma e responsive, garantendo una fruizione efficace sia da desktop sia da dispositivi mobili, in linea con le attuali modalità di consumo dei contenuti digitali.<p>
+        </div>
+      </div>
+    </div>
+
+    <!-- BENCHMARK -->
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#benchmark">
+          2. Benchmark (esistente e competitors)
+        </button>
+      </h2>
+      <div id="benchmark" class="accordion-collapse collapse">
+        <div class="accordion-body">
+         <h2>2.1 Benchmark 1 – Enciclopedia delle Donne</h2>
+
+<p>(https://www.enciclopediadelledonne.it)<p>
+
+<p>Il primo riferimento analizzato è l’Enciclopedia delle Donne, una piattaforma digitale dedicata alla valorizzazione delle figure femminili nella storia, nella cultura e nella società. La similitudine principale con il mio progetto risiede nell’intento culturale: entrambe le risorse nascono con l’obiettivo di restituire visibilità a donne storicamente marginalizzate nei canoni ufficiali.
+
+Dal punto di vista strutturale, l’Enciclopedia delle Donne adotta un’organizzazione basata su schede biografiche corredate da testo informativo e, in alcuni casi, immagini. Il modello è prevalentemente testuale, con un forte orientamento alla documentazione e alla narrazione biografica.
+
+Rispetto al mio progetto, la differenza principale riguarda il focus disciplinare: mentre l’Enciclopedia copre ambiti molto ampi (politica, scienza, letteratura, arte), la mia galleria si concentra specificamente sulle artiste italiane tra XVI e XVIII secolo, adottando una struttura più delimitata e curatoriale.<p>
+
+<p>Dal punto di vista tecnologico, entrambe le piattaforme condividono:
+  • una struttura web basata su HTML per l’organizzazione dei contenuti;
+  • un’interfaccia orientata alla consultazione;
+  • l’utilizzo di immagini e testi informativi come elementi centrali.<p>
+
+<p>Tuttavia, il mio progetto introduce un elemento strutturale differente: la modellizzazione dei dati tramite dataset JSON e l’uso di filtri dinamici implementati in JavaScript, che permettono una navigazione interattiva e non solo sequenziale.<p>
+
+
+
+<h2>2.2 Benchmark 2 – Esquimalenator (WordPress Gallery)</h2>
+
+<p>(https://esquimalenator.wordpress.com)<p>
+
+<p>Il secondo riferimento analizzato è una galleria digitale ospitata su piattaforma WordPress, caratterizzata da una forte centralità dell’immagine. La struttura richiama un modello espositivo: l’utente accede a una serie di immagini organizzate visivamente, con possibilità di selezione e approfondimento.
+
+La similitudine con il mio progetto riguarda principalmente l’impostazione visiva: anche nella mia galleria l’immagine rappresenta il punto di accesso principale all’opera, e la navigazione avviene attraverso una griglia visiva di oggetti culturali.
+
+Dal punto di vista del design, questa tipologia di sito mette in evidenza l’impatto visivo e l’immediatezza della consultazione, elementi che ho ritenuto importanti e che ho cercato di integrare nel mio layout attraverso una struttura a card e una disposizione a griglia.<p>
+
+<p>A livello tecnologico, la piattaforma WordPress utilizza un CMS preconfigurato con template e plugin per la gestione delle immagini e dei contenuti. Il mio progetto, invece, è stato sviluppato senza CMS, utilizzando:
+  • HTML per la struttura delle pagine;
+  • CSS per la progettazione dell’interfaccia;
+  • JavaScript per la gestione dinamica dei filtri e del caricamento dei dati;
+  • JSON per l’organizzazione strutturata delle opere.
+
+Questa scelta comporta una maggiore consapevolezza progettuale e un controllo diretto sulla modellizzazione dei dati.<p>
+
+
+
+<h2>2.3 Confronto e motivazioni progettuali</h2>
+
+<p>Entrambi i siti analizzati condividono con il mio progetto l’obiettivo di valorizzare contenuti culturali attraverso il web e l’integrazione di immagini e testi informativi. Tuttavia, il mio progetto si colloca a metà tra una piattaforma enciclopedica e una galleria espositiva: da un lato mantiene una struttura documentaria con metadati strutturati, dall’altro privilegia un accesso visivo e curatoriale.
+
+A differenza di un CMS preconfigurato, la scelta di sviluppare la galleria tramite HTML, CSS, JavaScript e dataset JSON consente una maggiore trasparenza nella gestione dei dati e una modellizzazione coerente degli oggetti culturali.<p>
+        </div>
+      </div>
+    </div>
+
+    <!-- STRUTTURA -->
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#struttura">
+          3. Struttura (mappa, schema e categorie)
+        </button>
+      </h2>
+      <div id="struttura" class="accordion-collapse collapse">
+        <div class="accordion-body">
+         <p>Il progetto è stato supportato dalla definizione di una struttura concettuale e logica chiara, rappresentata attraverso uno schema ER e un diagramma di flusso. Lo schema ER visualizza l’organizzazione dei dati e le relazioni tra le entità principali (opera, artista, metadati), evidenziando la modellizzazione del dataset in formato JSON. Il diagramma di flusso, invece, rappresenta il funzionamento dinamico del sito, illustrando il processo di caricamento dei dati, l’applicazione dei filtri e la navigazione verso la scheda opera. Questi strumenti progettuali hanno permesso di garantire coerenza strutturale, chiarezza semantica e una gestione ordinata delle informazioni.<p>
+        
+<h3>Diagramma di flusso</h3>
+<img src="assets/diagram/diagram.png" class="img-fluid" alt="Diagramma di flusso">
+ <h3>Schema ER / Struttura dei dati</h3> 
+  <img src="assets/diagram/schema.jpeg" class="img-fluid mb-4" alt="Schema ER">  
+      </div>
+      </div>
+    </div>
+
+    <!-- LAYOUT -->
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#layout">
+          4. Layout (architettura e wireframes)
+        </button>
+      </h2>
+      <div id="layout" class="accordion-collapse collapse">
+        <div class="accordion-body">
+           <p>Il layout del sito è stato progettato secondo un modello chiaro, coerente e gerarchico, ispirato all’architettura dei musei digitali contemporanei. La struttura prevede un header fisso con navigazione principale, un’area centrale dedicata ai contenuti e un footer informativo unificato. La homepage privilegia un approccio introduttivo e curatoriale, con una sezione hero e un accesso rapido alle artiste. La pagina “Collezione” adotta una struttura a due colonne: una sidebar laterale per i filtri dinamici e una griglia responsive di opere organizzate in card visive. La scheda opera presenta invece un layout verticale centrato, con immagine principale in evidenza, metadati strutturati e sezione dedicata alla localizzazione. L’interfaccia è responsive, con griglie flessibili che si adattano ai dispositivi mobili, e utilizza una palette cromatica pastello e una gerarchia tipografica elegante per garantire leggibilità, equilibrio visivo e coerenza estetica.<p>
+         <h3>Wireframe Home</h3>
+<img src="assets/diagram/home.png" class="img-fluid mb-4" alt="Wireframe Home">
+
+<h3>Wireframe Collezione</h3>
+<img src="assets/diagram/collezione.png" class="img-fluid mb-4" alt="Wireframe Collezione">
+
+<h3>Wireframe Scheda Opera</h3>
+<img src="assets/diagram/scheda-opere.png" class="img-fluid mb-4" alt="Wireframe Scheda Opera">
+
+<h3>Wireframe Web Project Plan</h3>
+<img src="assets/diagram/wpp.png" class="img-fluid" alt="Wireframe WPP">
+        </div>
+      </div>
+    </div>
+
+    <!-- USABILITÀ -->
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#usabilita">
+          5. Usabilità (efficacia, grafica e tipografia)
+        </button>
+      </h2>
+      <div id="usabilita" class="accordion-collapse collapse">
+        <div class="accordion-body">
+         <p>L’usabilità del sito è stata progettata secondo principi di chiarezza, coerenza visiva e accessibilità. L’interfaccia adotta un design pulito in stile “museo digitale”, con una struttura gerarchica chiara: header con navigazione principale (Home, Collezione, Documentazione), contenuto centrale organizzato per sezioni e footer informativo. La navigabilità è semplice e intuitiva: dalla Home si può accedere direttamente alla collezione o alla documentazione; nella pagina Collezione i filtri (secolo, artista, tecnica, tema e ricerca libera) permettono un’esplorazione dinamica del dataset; ogni opera è collegata a una scheda dedicata, garantendo una struttura di navigazione gerarchica ma sempre reversibile. Il sito è responsive e progettato per essere consultabile sia da desktop sia da dispositivi mobili, con griglie flessibili e ridisposizione verticale degli elementi su schermi ridotti. Dal punto di vista tipografico, è stata scelta una combinazione tra un font serif elegante per i titoli (Playfair Display) e un serif leggibile per il corpo del testo (Source Serif / Inter), creando un equilibrio tra autorevolezza accademica e leggibilità digitale. La palette cromatica utilizza tonalità pastello e neutre (avorio, verde salvia, sabbia), ispirate agli ambienti museali, con contrasti moderati per non affaticare la lettura. I bottoni e gli elementi interattivi mantengono coerenza cromatica e feedback visivo al passaggio del mouse, migliorando l’esperienza utente. L’organizzazione visiva privilegia spazi bianchi, card strutturate e gerarchie tipografiche evidenti, facilitando la comprensione dei contenuti e l’orientamento all’interno del sito.<p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SERVIZI -->
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#servizi">
+          6. Servizi (browsing e interazione)
+        </button>
+      </h2>
+      <div id="servizi" class="accordion-collapse collapse">
+        <div class="accordion-body">
+    <p>Il sito integra diversi strumenti di browsing e interazione che migliorano l’esperienza dell’utente e valorizzano il dataset digitale. La navigazione avviene attraverso menu principale, collegamenti interni tra pagine e filtri dinamici nella sezione Collezione. I principali strumenti di browsing includono filtri per secolo, artista, tecnica e tema iconografico, oltre a una ricerca libera per parola chiave, che permette un’esplorazione mirata della collezione. L’interazione è supportata da elementi dinamici sviluppati in JavaScript, che consentono il caricamento dei dati da file JSON e l’aggiornamento in tempo reale dei risultati senza ricaricare la pagina. Ogni opera è collegata a una scheda dedicata che funge da nodo informativo approfondito, con metadati strutturati, descrizione storico-artistica, fonti e diritti. Il sito non integra strumenti di annotazione collaborativa o visualizzazioni avanzate (come timeline o grafici), poiché l’obiettivo principale è stato garantire chiarezza strutturale e coerenza semantica dei dati; tuttavia, la struttura del dataset è progettata in modo scalabile, consentendo future implementazioni di visualizzazioni comparative, mappe cronologiche o strumenti di analisi tematica. In questo senso, il progetto privilegia un modello di consultazione chiaro e didattico, fondato su metadati interoperabili e navigazione strutturata.<p>
+        </div>
+      </div>
+    </div>
+
+    <!-- BIBLIOGRAFIA -->
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#bibliografia">
+          7. Bibliografia e sitografia
+        </button>
+      </h2>
+      <div id="bibliografia" class="accordion-collapse collapse">
+        <div class="accordion-body">
+         <p><strong>Immagini (risorse multimediali) — Wikimedia Commons / upload Wikimedia.</strong><br>
+<p>Tutte le immagini utilizzate nel sito provengono da Wikimedia Commons (o da upload.wikimedia.org) e vengono riutilizzate nel rispetto delle condizioni di licenza indicate nella pagina del file (Public Domain / Creative Commons). Per ogni opera sono riportati nel sito i crediti (source / imageCredit) e l’indicazione dei diritti (rights).</p>
+
+<ul>
+  <li>Lavinia Fontana, <em>La famiglia Gozzadini</em> (1583): https://commons.wikimedia.org/wiki/File:Lavinia_Fontana,_La_famiglia_Gozzadini,_1583.jpg</li>
+  <li>Fede Galizia, <em>Giuditta con la testa di Oloferne</em>: https://commons.wikimedia.org/wiki/File:Fede_Galizia_-_Giuditta_con_la_testa_di_Oloferne.jpg</li>
+  <li>Sofonisba Anguissola, <em>Autoritratto al cavalletto</em> (1556): https://commons.wikimedia.org/wiki/File:Sofonisba_Anguissola,_Selvportr%C3%A6t_ved_staffeliet,_1556,_Museum_Castle_in_%C5%81a%C5%84cut.jpg</li>
+  <li>Fede Galizia, <em>Natura morta con alzata di pere</em>: https://commons.wikimedia.org/wiki/File:Fede_galizia,_natura_morta_con_alzata_di_pere.jpg</li>
+  <li>Lavinia Fontana, <em>Autoritratto</em> (1579): https://commons.wikimedia.org/wiki/File:Lavinia_fontana,_autoritratto,_1579,_su_rame.jpg</li>
+  <li>Lavinia Fontana, <em>Portrait of a Pregnant Woman, Possibly a Self-Portrait</em>: https://commons.wikimedia.org/wiki/File:Lavinia_Fontana_-_Portrait_of_a_Pregnant_Woman,_Possibly_a_Self-Portrait.jpg</li>
+  <li>Rosalba Carriera, <em>Self-portrait</em>: https://commons.wikimedia.org/wiki/File:Rosalba_Carriera_Self-portrait.jpg</li>
+  <li>Rosalba Carriera, <em>Portrait of young woman</em> (Gallerie dell’Accademia, Venezia): https://commons.wikimedia.org/wiki/File:(Venice)_Portrait_of_young_woman_by_Rosalba_Carriera_-_Gallerie_Accademia.jpg</li>
+  <li>Elisabetta Sirani, <em>Venus and Cupid</em> (Sotheby’s): https://commons.wikimedia.org/wiki/File:Elisabetta_Sirani_195_Sotheby%27s,_Venus_and_Cupid.webp</li>
+  <li>Elisabetta Sirani (ritratto): https://commons.wikimedia.org/wiki/File:Elisabetta_Sirani.jpg</li>
+  <li>Elisabetta Sirani, <em>Autoritratto</em> (Museo Puškin): https://upload.wikimedia.org/wikipedia/commons/e/e7/Elisabetta_Sirani_Autorretrato_Museo_Pushkin_Moscu.jpg</li>
+  <li>Artemisia Gentileschi, <em>Susanna</em> (1622): https://commons.wikimedia.org/wiki/File:Artemisa_Susanna_1622.jpg</li>
+  <li>Sofonisba Anguissola, <em>The Chess Game</em> (1555): https://commons.wikimedia.org/wiki/File:The_Chess_Game_(Sofonisba_Anguissola)_1555_(4096x3236px).jpg</li>
+  <li>Artemisia Gentileschi, <em>Judith and Maidservant</em> (Detroit Institute of Arts): https://commons.wikimedia.org/wiki/File:Artemisia_Gentileschi_Judith_Maidservant_DIA.jpg</li>
+</ul>
+
+<p><strong>Fonti testuali (informazioni su artiste e opere).</strong><br>
+Le informazioni storico-artistiche presenti nelle schede (item) e nella documentazione sono state ricavate tramite consultazione di repertori enciclopedici e schede di riferimento (voci dedicate alle artiste, contesto storico-artistico, dati essenziali sulle opere). Le fonti vengono citate nel campo <em>source</em> e/o nella sezione “Fonti” della scheda opera, distinguendo tra fonte dell’immagine e fonte del testo.</p>
+
+<p><strong>Strumenti per browsing e interazione.</strong><br>
+Il sito è sviluppato con HTML5 e CSS3 per struttura e stile, JavaScript per caricamento dati e filtri di ricerca/browsing, e JSON come formato per il dataset dei metadati. Per la documentazione (Web Project Plan) sono stati utilizzati componenti Bootstrap (navbar, dropdown, accordion, table responsive). Per i test in locale è stato usato un server locale (es. SimpleHTTPServer su porta 8000), mentre la pubblicazione avviene tramite GitHub Pages.</p>
+
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- DUBLIN CORE -->
+<section id="dublincore" class="docs-section">
+  <h2>Dublin Core mapping</h2>
+  <p>
+    Il dataset del progetto è stato strutturato secondo un modello
+    interoperabile ispirato allo standard Dublin Core Metadata Initiative (DCMI),
+    al fine di garantire coerenza descrittiva, riusabilità e interoperabilità dei dati.
+  </p>
+
+  <table class="table table-bordered table-striped mt-3">
+    <thead>
+      <tr>
+        <th>Campo dataset</th>
+        <th>Dublin Core</th>
+        <th>Esempio</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>title</td>
+        <td>dc:title</td>
+        <td>Giuditta con la testa di Oloferne</td>
+      </tr>
+      <tr>
+        <td>artist</td>
+        <td>dc:creator</td>
+        <td>Artemisia Gentileschi</td>
+      </tr>
+      <tr>
+        <td>year / century</td>
+        <td>dc:date</td>
+        <td>1614</td>
+      </tr>
+      <tr>
+        <td>themes</td>
+        <td>dc:subject</td>
+        <td>Eroine bibliche</td>
+      </tr>
+      <tr>
+        <td>technique</td>
+        <td>dc:format</td>
+        <td>Olio su tela</td>
+      </tr>
+      <tr>
+        <td>source / imageCredit</td>
+        <td>dc:source</td>
+        <td>Wikimedia Commons</td>
+      </tr>
+      <tr>
+        <td>rights</td>
+        <td>dc:rights</td>
+        <td>Pubblico dominio</td>
+      </tr>
+      <tr>
+        <td>description</td>
+        <td>dc:description</td>
+        <td>Descrizione storico-artistica dell’opera</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  </p>
+</section>
+  </main>
+  
+  <footer class="site-footer">
+    <div class="footer-inner">
+
+      <div class="footer-project">
+        <h4>Galleria Artiste Italiane</h4>
+        <p>
+          Progetto accademico di Informatica Umanistica<br>
+          Alma Mater Studiorum – Università di Bologna<br>
+          Anno Accademico 2025–2026
+        </p>
+      </div>
+
+      <div class="footer-meta">
+        <p>
+          © 2026 Galleria Artiste Italiane — Progetto didattico senza fini di lucro.
+        </p>
+        <p>
+          Immagini e contenuti utilizzati a scopo educativo.
+          I diritti delle opere appartengono ai rispettivi enti e collezioni.
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

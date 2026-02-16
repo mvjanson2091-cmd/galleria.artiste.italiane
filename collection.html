@@ -1,0 +1,74 @@
+  <!-- COLLEZIONE-->
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Collezione</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body onload="initCollection()">
+<header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a class="active" href="collection.html">Collezione</a>
+    <a href="docs.html">Documentazione</a>
+  </nav>
+  <h1>Collezione</h1>
+<p>12 opere di 6 artiste italiane (XVI-XVIII secolo)</p>
+</header>
+
+<main class="layout-2col">
+  <aside class="panel">
+<h2>Filtra la collezione</h2>
+
+    <label>Periodo (secolo)</label>
+    <select id="fCentury"><option value="">Tutti</option></select>
+
+<label>Artista</label>
+    <select id="fArtist"><option value="">Tutte</option></select>
+
+    <label>Tecnica artistica</label>
+    <select id="fTechnique"><option value="">Tutte</option></select>
+
+    <label>Tema iconografico</label>
+    <select id="fTheme"><option value="">Tutti</option></select>
+
+    <label>Ricerca libera</label>
+<input id="q" placeholder="Cerca per titolo o artista" />
+<button id="reset">Reimposta filtri</button>  </aside>
+
+  <section>
+    <p id="count"></p>
+    <div id="results" class="grid"></div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+
+    <div class="footer-project">
+      <h4>Galleria Artiste Italiane (1500–1800)</h4>
+      <p>
+        Progetto accademico di Informatica Umanistica<br>
+        Alma Mater Studiorum – Università di Bologna<br>
+        Anno Accademico 2025–2026
+      </p>
+    </div>
+
+    <div class="footer-meta">
+      <p>
+        © 2026 Galleria Artiste Italiane — Progetto didattico senza fini di lucro.
+      </p>
+      <p>
+        Immagini e contenuti utilizzati a scopo educativo.  
+        I diritti delle opere appartengono ai rispettivi enti e collezioni.
+      </p>
+    </div>
+
+  </div>
+</footer>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>
